@@ -28,4 +28,4 @@ That means one of your middleware is there jamming your system :).
 It is more useful in [repl](https://nodejs.org/api/repl.html).
 See ```example``` folder or try ```npm start``` or ```node ./example/index.js``` to start using express with REPL.
 Demo using it with a loopback app REPL.
-![alt tag](https://raw.githubusercontent.com/yshing/loopback-list-express/master/example/img.png)
+![screenshot](/example/demo.png?raw=true)
