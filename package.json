@@ -1,6 +1,6 @@
 {
   "name": "express-list-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "list middleware used in express app with a trace to files.",
   "main": "index.js",
   "scripts": {
