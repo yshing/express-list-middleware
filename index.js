@@ -1,7 +1,9 @@
 'use strict';
 function listMiddleWare (app){
-  return Array.prototype.map.call(app._router.stack, function (middleware, index){
-    return index+'. ' + middleware.name + ' ' + getFileLine(middleware.handle);
+  var appStack = app._router.stack || app.stack || undefined;
+  return Array.prototype.map.call(appStack, function (middleware, index){
+    return index+'. ' + (middleware.handle.name || '<anonymous function>') + ' ' +
+      getFileLine(middleware.handle);
   });
   // force the middleware to produce an error to locate the file.
   function getFileLine(handler){
