@@ -3,6 +3,8 @@ List middleware used in Express or express based framework loopback / sails. It 
 
 Hopefully this package would save you some time locating bad middleware or resolving issues due to the order of the stack.
 
+See also [express-repl-tookit](https://www.npmjs.com/package/express-repl-toolkit) if you are trying to debug / or play express as in a playground.
+
 ## Useage:
 For debugging express apps.
 Takes a booted express.js app instance returns array of string describing the order of execution of your middleware and where to absolute path of your middleware.
